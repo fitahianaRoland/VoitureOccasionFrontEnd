@@ -1,0 +1,191 @@
+
+
+/* login.css */
+.bodyLogin {
+  width: 100%;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-image: url('../img/Sports-Car-High-Quality-PNG.png');
+  background-size: cover; 
+  background-position: center;
+  background-repeat: no-repeat; */
+}
+
+.containerLogin {
+  background-color: rgba(255, 255, 255, 0.8); /* Ajustez le dernier nombre pour la transparence */
+  width: 80%; /* Ajustez la largeur en pourcentage */
+  max-width: 400px; /* Limitez la largeur maximale pour éviter de devenir trop large sur des écrans larges */
+  margin: 0 auto; /* Centre horizontalement */
+  padding: 20px; /* Ajoutez un peu de rembourrage pour l'espace intérieur */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  --themcolor: rgb(163, 27, 41);
+  transition: box-shadow 0.3s ease;
+  border-radius: 10px;
+}
+
+/* Ajoutez des règles de style pour le contenu à l'intérieur de .containerLogin si nécessaire */
+
+  .containerLogin:hover {
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* ... (le reste du fichier reste inchangé) */
+  
+
+.containerLogin .entete {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.containerLogin .entete :nth-child(1) {
+  color: var(--themcolor);
+  font-size: 30px;
+}
+
+.containerLogin .entete :nth-child(2) {
+  color: rgba(0, 0, 0, 0.885);
+  font-size: large;
+  font-weight: 800;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.containerLogin .entete :nth-child(3) {
+  color: rgba(0, 0, 0, 0.605);
+  font-size: small;
+}
+
+.formulaire form {
+  margin-top: 10px;
+  height: 180px;
+  padding: 5px;
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  row-gap: 5px;
+  animation: slideIn 1s ease;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.formulaire form .nom,
+.formulaire form .password {
+  padding: 0 70px;
+  display: grid;
+  grid-template-columns:  1fr;
+  /* align-items: center;
+  justify-content: center;
+  align-content: center; */
+  color: #000000b4;
+}
+
+.formulaire form .nom input,
+.formulaire form .password input {
+  border: 0.5px solid rgba(0, 0, 0, 0.147);
+  border-radius: 5px;
+  padding-left: 10px;
+  /* border-bottom: 1px solid #0000005d; */
+  transition: border-bottom 0.3s ease;
+}
+
+.formulaire form .nom input:focus,
+.formulaire form .password input:focus {
+  border-bottom: 1px solid var(--themcolor);
+}
+
+.formulaire form .adding,
+.formulaire form .valider {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  justify-content: center;
+  padding: 0 120px;
+  color: rgba(0, 0, 0, 0.562);
+  font-size: x-small;
+  font-family: sans-serif;
+}
+
+.formulaire form .adding :nth-child(1),
+.formulaire form .adding :nth-child(2) {
+  opacity: 0;
+  transform: translateX(-20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.formulaire form:hover .adding :nth-child(1),
+.formulaire form:hover .adding :nth-child(2) {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.formulaire form .adding :nth-child(1) {
+  color: black;
+}
+
+.formulaire form .adding :nth-child(2) {
+  color: var(--themcolor);
+}
+
+.formulaire form .valider input {
+  color: #fff;
+  background-color: var(--themcolor);
+  border: none;
+  border-radius: 0px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  width: 100%;
+}
+
+.formulaire form .valider input:hover {
+  cursor: pointer;
+  /* background-color: #0056b3; */
+  transform: scale(1.05);
+}
+
+.formulaire form .valider :nth-child(2) {
+  color: rgb(255, 255, 255);
+  position: absolute;
+  margin-left: 80px;
+}
+
+
+#button{
+  /* margin-top: 10px; */
+  padding: 8px 50px;
+  border: none;
+  color: white;
+  /* width: 100px; */
+  border-radius: 10px;
+}
+
+.errorMessage {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  justify-content: center;
+  padding: 0 120px;
+  color: red;
+  font-size: x-small;
+  font-family: sans-serif;
+}

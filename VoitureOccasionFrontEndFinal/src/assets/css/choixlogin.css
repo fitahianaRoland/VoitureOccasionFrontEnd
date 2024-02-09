@@ -1,0 +1,36 @@
+/* Styles de base pour le conteneur */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+  }
+  
+  /* Styles pour les liens */
+  .link {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+  }
+  
+  .link:hover {
+    background-color: #eee;
+    border-color: #ccc;
+  }
+  
+  /* Styles spécifiques pour chaque lien */
+  .link.user {
+    background-color: #3498db;
+    color: #fff;
+  }
+  
+  .link.admin {
+    background-color: #e74c3c;
+    color: #fff;
+  }
+  

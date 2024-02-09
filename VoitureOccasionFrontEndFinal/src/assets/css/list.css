@@ -1,0 +1,81 @@
+.listadmincontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.listadmincontainer table thead{
+    background-color: rgba(138, 27, 27, 0.299);
+    color: #00000094;
+}
+.listadmincontainer table {
+    padding: 10 10px;
+    width: 100%;
+}
+.listadmincontainer .list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+.listadmincontainer .list{
+    width: 100%;
+}
+
+.listadmincontainer .list table thead tr{ 
+    width: 10%;
+    height: 45px;
+}
+.listadmincontainer table tbody > tr{
+    background-color: rgba(238, 99, 99, 0.126);
+    color: #000000b8;
+    font-size: small;
+    font-weight: 400;
+}
+.listadmincontainer table tbody tr td:nth-child(3){
+    padding: 10px 5px;
+}
+.listadmincontainer table tbody tr td:nth-child(3) input{
+    height: 25px;
+    background-color: transparent;
+    border-bottom: 1px solid rgb(146, 143, 143);
+    color: rgb(0, 0, 0);
+    padding-left: 10px;
+    text-align: center;
+
+}
+.listadmincontainer table tbody tr td:nth-child(3) button{
+    margin-left: 5px;
+    width: 20%;
+    height: 30px;
+    border: none;
+    color: rgba(255, 255, 255, 0.968);
+    font-weight: 600;
+    background-color: rgba(165, 42, 42, 0.862);
+    transition: 0.2s;
+    border-radius: 10px;
+    
+}
+.listadmincontainer table tbody tr td:nth-child(3) button:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    background-color: #fff;
+    color: brown;
+}
+@media (max-width: 750px){
+    .listadmincontainer table{
+        width:95%;
+    }
+    .listadmincontainer table tbody tr td:nth-child(3) input{
+        /* width: 100px; */
+    }
+    .listadmincontainer table tbody tr td:nth-child(3) button{
+        width: 70px;
+        margin-top: 10px;
+    }
+}

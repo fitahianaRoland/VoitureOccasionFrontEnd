@@ -1,0 +1,34 @@
+#GrandTitre{
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    grid-template-rows: minmax(200px, auto);
+}
+.img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#contenu{
+    padding-left: 10%;
+}
+#titre label{
+    font-size: 200%;
+}
+@media (max-width: 900px) {
+    #GrandTitre #image{
+        display: none;
+    }
+    #GrandTitre{
+        grid-template-columns: 1fr;
+        column-gap: 50px;
+    }
+    #contenu{
+        display: flex;
+        text-align: center;
+        padding:20px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}

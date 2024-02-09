@@ -1,0 +1,78 @@
+#secondairetitle{
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    grid-template-rows: minmax(200px, auto);
+    width: 90vw;
+}
+.img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#contenu{
+    padding-left: 10%;
+}
+#titre label{
+    font-size: 150%;
+    font-weight: 700;
+}
+#secondairetitle #contenu #about{
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    row-gap: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+#secondairetitle #contenu #about .box{
+    display: grid;
+    grid-template-columns: 20px 1fr;
+    column-gap: 20px;
+    align-items: center;
+}
+#secondairetitle #contenu #about .box .icon{
+    background-color: #ebb1f8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    border-radius: 20px;
+    width: 35px;
+    height: 35px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    opacity:0.7;
+}
+#secondairetitle #contenu #about .box label{
+    font-size: small;
+    color: rgba(0, 0, 0, 0.559);
+    
+}
+#secondairetitle #contenu #about .box svg{
+    color: #6d0684;
+}
+
+@media (max-width: 900px) {
+    #secondairetitle{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+    }
+    #secondairetitle{
+        grid-template-columns: 1fr;
+        column-gap: 50px;
+    }
+    #contenu{
+        display: flex;
+        text-align: left;
+        padding:20px;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    #secondairetitle #image {
+        padding-left: 10px;
+        width: 400px;
+    }
+}

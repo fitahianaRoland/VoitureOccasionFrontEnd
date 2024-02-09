@@ -1,0 +1,63 @@
+.carContainer {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .carContainer .lien{
+    text-align: end;
+  }
+  
+  .slick-slide > div {
+    margin: 0 10px;
+  }
+  .slick-list {
+    margin: 0 -10px;
+  }
+  
+  .card {
+    border-radius: 20px;
+    overflow: hidden;
+    border: 0.5px #000000;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.02);
+    height: 200px;
+    color: #fff;
+    cursor: pointer;
+  
+    padding: 5px ;
+  }
+  
+  .card-top label {
+    font-size:x-small;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.909);
+  
+  }
+  
+  .card-top > img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+  }
+  
+  .card-bottom label{
+    font-size: small;
+    color: rgba(0, 0, 0, 0.688);
+  }
+  .slick-prev.slick-disabled:before, .slick-next.slick-disabled:before {
+    opacity: .25;
+    color: black;
+  }
+  .slick-prev:hover:before, .slick-prev:focus:before, .slick-next:hover:before, .slick-next:focus:before {
+    opacity: 10;
+    color: rgb(0, 0, 0);
+  }
+  
+  
+  .slick-prev:before, .slick-next:before {
+    font-size: 50px;
+    color: #000000;
+    margin-left: 5px;
+    opacity: 10;
+
+  }

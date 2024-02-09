@@ -1,5 +1,5 @@
 function getUrl() {
-    const url = `http://localhost:4000`;
+    const url = `https://voitureoccasionbackend-production.up.railway.app`;
     return url;
 }
 export default getUrl;
